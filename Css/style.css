@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #362626 !important;
+    color: white !important;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
