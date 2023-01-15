@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #362626 !important;
+    color: white !important;
+    font-family: 'Courier New', Courier, monospace !important; /* fonte parametrizável*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    position: fixed;
+    background-color: #201818;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 15px 50px;
+    opacity: 0.9;
+}
+
+main {
+    padding: 100px;
+}
+
+.corpo {
+    margin-top: 100px;
+    -webkit-box-shadow: 2px 2px 13px 16px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 13px 16px rgba(0,0,0,1);
+    box-shadow: 2px 2px 13px 16px rgba(0,0,0,1);
+    border-radius: 15px 50px;
+    /* Background parametrizável*/
+}
