@@ -18,7 +18,7 @@
                 <nav class="navi-container">
                     <a href="index.html"><button class="nav-btn">Inicio</button></a>
                     <a href="#quemSou"><button class="nav-btn">Quem sou</button></a>
-                    <a href="#serviços"><button class="nav-btn">Serviços</button></a>
+                    <a href="#servicos"><button class="nav-btn">Serviços</button></a>
                     <a href="#projetos"><button class="nav-btn">Projetos</button></a>
                     <a href="#parceiros"><button class="nav-btn">Parceiros</button></a>
                     <a href="#contato"><button class="nav-btn">Contato</button></a>
@@ -27,10 +27,9 @@
     </header>
     <main>
         <div class="corpo">
-
-        
+                
         <div class="Intro">
-            <div>
+            <div class="intro-image-container">
                 <img class="intro-image" src="/imagens/photoMe.png" alt="">
             </div>
             <div class="intro-info">
@@ -43,9 +42,10 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <div id="quemSou">
-            <br><br><br><br>
+            <br><br><br><br><br>
             <div  class="quemSou">
                 <div class="intro-quemSou">
                     <div class="quemSou-title">
@@ -55,7 +55,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia rem atque, nam, quod quae veritatis, dignissimos id vitae dolorem sint molestias ab vero consequuntur dolor tempore nisi animi dolorum.</p>
                     </div>
                 </div>
-                <div class="tecnologias-quemSou">
+                <div class="tecnologias-quemSou"> <!--Precisd passar as tecnologias e as %-->
                     <ul>
                         <div>
                           <li>Tecnologia 01</li>
@@ -97,31 +97,34 @@
                 </div>
             </div>
         </div>
-        <div id="serviços">
+        <div id="servicos">
             <br><br><br><br>
-            <div  class="serviço-container">
-                <div class="serviço-tile">
+            <div  class="servico-container">
+                <div class="servico-title">
                     <h3>Serviços</h3>
                 </div>
-                <div class="serviço-body">
+                <div class="servico-body">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis, ab sequi rem dignissimos modi alias aliquid aspernatur odio minima magnam nisi atque possimus obcaecati soluta. Vero blanditiis doloremque at!</p>
                 </div>
-                <div class="serviço-list">
+                <div class="servico-list">
                     <ul>
-                        <div>
-                            <li onclick="logotipo()">Serviço 01</li>
+                        <div class="servico">
+                            <div>
+                                <li onclick="servico01()"><button class="servico-btn">Serviço 01</button></li>
+                            </div>
+                            
                             <div id="designServico01"></div>
                         </div>
-                        <div>
-                            <li onclick="cartao()">Serviço 02</li>
+                        <div class="servico">
+                            <li onclick="servico02()"><button class="servico-btn">Serviço 02</button></li>
                             <div id="designServico02"></div>
                         </div>
-                        <div>
-                            <li onclick="designer()">Serviço 03</li>
+                        <div class="servico">
+                            <li onclick="servico03()"><button class="servico-btn">Serviço 03</button></li>
                             <div id="designServico03"></div>
                         </div>
-                        <div>
-                            <li onclick="arte()">Serviço 04</li>
+                        <div class="servico">
+                            <li onclick="servico04()"><button class="servico-btn">Serviço 04</button></li>
                             <div id="designServico04"></div>
                         </div>
     

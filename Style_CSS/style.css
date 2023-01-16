@@ -22,21 +22,126 @@ header {
     position: fixed;
     background-color: #201818;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-top: 20px;
     border-radius: 15px 50px;
     opacity: 0.9;
 }
+
+.nav-btn {
+    background-color: #201818;
+    color: white;
+    border: none;
+    margin: 20px;
+}
+
+button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: rgb(207, 207, 207); /* Parametrizável*/
+    transition: width .3s ease-in;
+  }
+  
+  button:hover::after {
+    width: 100%;
+  }
 
 main {
     padding: 100px;
 }
 
 .corpo {
-    margin-top: 100px;
+    margin-top: 180px;
     -webkit-box-shadow: 2px 2px 13px 16px rgba(0,0,0,1);
     -moz-box-shadow: 2px 2px 13px 16px rgba(0,0,0,1);
     box-shadow: 2px 2px 13px 16px rgba(0,0,0,1);
     border-radius: 15px 50px;
+    padding: 30px;
     /* Background parametrizável*/
 }
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.intro-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.intro-image {
+    width: 300px;
+    transition: .5s;
+    border: 10px groove #201818;
+}
+
+.intro-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    line-height: 40px;
+}
+
+.quemSou-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.quemSou-body {
+    line-height: 40px;
+}
+
+.tecnologias-quemSou { 
+    line-height: 50px;
+    width: 90%; 
+}
+
+.servico-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.servico-body {
+    line-height: 40px;
+}
+
+.servico {
+    line-height: 80px;
+}
+
+.servico-btn{
+    background-color: #362626;
+    color: white;
+    border: none;
+   
+    
+}
+
+ .servico-btn::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #000;
+    transition: width .4s ease-in;
+  }
+  
+ .servico-btn:hover::after {
+    width: 100%;
+  }
+
