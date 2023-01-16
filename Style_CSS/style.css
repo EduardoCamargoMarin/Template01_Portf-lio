@@ -122,26 +122,35 @@ main {
 
 .servico {
     line-height: 80px;
+    cursor: pointer;
 }
 
-.servico-btn{
-    background-color: #362626;
-    color: white;
-    border: none;
-   
+.projetos-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projeto-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.projeto-body {
+    line-height: 40px;
+}
+
+.projeto-images { /* Parametrizável*/
+    width: 200px; 
+    margin: 70px;
+
     
 }
 
- .servico-btn::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 5px;
-    background: #000;
-    transition: width .4s ease-in;
-  }
-  
- .servico-btn:hover::after {
-    width: 100%;
-  }
+
+
+
 
