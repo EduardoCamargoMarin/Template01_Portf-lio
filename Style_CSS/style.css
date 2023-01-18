@@ -76,10 +76,10 @@ main {
 }
 
 
-.intro-image {
+.img-thumbnail {
     width: 300px;
     transition: .5s;
-    border: 10px groove #201818;
+    border: none;
 }
 
 .intro-title {
@@ -150,7 +150,111 @@ main {
     
 }
 
+.parceiros-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
+.parceiros-body {
+    line-height: 40px;
+}
 
+.parceiros-images {
+width: auto;
+
+}
+
+.parceiro-image1 {
+    width: 300px;
+}
+
+.contato-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;  
+}
+
+.forms-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.insert-forms {
+    width: 500px;
+    border: 5px groove black;
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.insert-text {
+    border: 5px groove black;
+    border-radius: 10px;
+}
+
+.insert-forms:hover {
+    background-color: rgb(185, 185, 185);
+}
+
+.insert-text:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.btn-forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    
+} 
+
+.btn-forms:hover {
+    background-color: rgb(185, 185, 185);
+}
+
+.rodape {
+    width: auto;
+    background-color: #201818;
+    border-top: 2px solid black
+}
+
+.rodape-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+.contato-image {
+    width: 40px;
+}
+
+.social-container {
+    margin-top: -30px;
+}
+
+.social-image {
+    width: 40px;
+}
+
+.mkt-dev{
+    width: 200px;
+}
+
+.dev-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid white;
+   margin-top: 50px;
+   background-color: #000000;
+}
 
 

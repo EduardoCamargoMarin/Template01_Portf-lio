@@ -12,16 +12,16 @@
 <body>
     <header class="cabecalho">
         <div class="logtipo">
-            <h1>Logo</h1>
+            <h1>Logo</h1> <!--String ou imagem-->
         </div>
             <div>
                 <nav class="navi-container">
-                    <a href="index.html"><button class="nav-btn">Inicio</button></a>
-                    <a href="#quemSou"><button class="nav-btn">Quem sou</button></a>
-                    <a href="#servicos"><button class="nav-btn">Serviços</button></a>
-                    <a href="#projetos"><button class="nav-btn">Projetos</button></a>
-                    <a href="#parceiros"><button class="nav-btn">Parceiros</button></a>
-                    <a href="#contato"><button class="nav-btn">Contato</button></a>
+                    <a href="index.html"><button class="nav-btn"><strong>Inicio</strong></button></a>
+                    <a href="#quemSou"><button class="nav-btn"><strong>Quem sou</strong></button></a>
+                    <a href="#servicos"><button class="nav-btn"><strong>Serviços</strong></button></a>
+                    <a href="#projetos"><button class="nav-btn"><strong>Projetos</strong></button></a>
+                    <a href="#parceiros"><button class="nav-btn"><strong>Parceiros</strong></button></a>
+                    <a href="#contato"><button class="nav-btn"><strong>Contato</strong></button></a>
                 </nav>
             </div>
     </header>
@@ -30,11 +30,11 @@
                 
         <div class="Intro">
             <div class="intro-image-container">
-                <img class="intro-image" src="/imagens/photoMe.png" alt="">
+                <img src="/imagens/photoMe.png" class="img-thumbnail" alt="...">
             </div>
             <div class="intro-info">
                 <div class="intro-title">
-                    <h3>Olá, meu nome é +name+</h3>
+                    <h3><strong>Olá, meu nome é +name+</strong></h3>
                 </div>
                 <div class="intro-body">
                     <div class="intro-text">
@@ -49,7 +49,7 @@
             <div  class="quemSou">
                 <div class="intro-quemSou">
                     <div class="quemSou-title">
-                        <h3>Quem sou</h3>
+                        <h3><strong>Quem sou</strong></h3>
                     </div>
                     <div class="quemSou-body">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia rem atque, nam, quod quae veritatis, dignissimos id vitae dolorem sint molestias ab vero consequuntur dolor tempore nisi animi dolorum.</p>
@@ -98,10 +98,10 @@
             </div>
         </div>
         <div id="servicos">
-            <br><br><br><br>
+            <br><br><br><br><br>
             <div  class="servico-container">
                 <div class="servico-title">
-                    <h3>Serviços</h3>
+                    <h3><strong>Serviços</strong></h3>
                 </div>
                 <div class="servico-body">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis, ab sequi rem dignissimos modi alias aliquid aspernatur odio minima magnam nisi atque possimus obcaecati soluta. Vero blanditiis doloremque at!</p>
@@ -133,11 +133,11 @@
             </div>
         </div>
         <div id="projetos">
-            <br><br><br><br>
+            <br><br><br><br><br>
             <div  class="projetos">
                 <div class="projetos-container">
                     <div class="projeto-title">
-                        <h3>Projetos desenvolvidos</h3>
+                        <h3><strong>Projetos desenvolvidos</strong></h3>
                     </div>
                     <div class="projeto-body">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo voluptatem reprehenderit voluptates molestiae ratione necessitatibus, exercitationem, repellat voluptas iste adipisci doloribus! Iste unde consequuntur adipisci magni quod reprehenderit laborum.</p>
@@ -151,39 +151,49 @@
             </div>
         </div>
         <div id="parceiros">
-            <br><br><br><br>
+            <br><br><br><br><br>
             <div  class="parceiros-container">
                 <div class="parceiros-title">
-                    <h3>Nossos parceiros</h3>
+                    <h3><strong>Nossos parceiros</strong></h3>
                 </div>
                 <div class="parceiros-body">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius placeat fuga inventore! Id ex rem distinctio eum impedit consequuntur alias quas sequi magni laudantium labore nisi, itaque ut molestiae veniam.</p>
                 </div>
                 <div class="parceiros-images">
-                    <img src="/imagens/Parceiros/EduardoMarin.png" alt="" srcset="">
+                    <img class="parceiro-image1" src="/imagens/Parceiros/EduardoMarin.png" alt="" srcset="">
+                    <img class="parceiro-image1" src="/imagens/Parceiros/EduardoMarin.png" alt="" srcset="">
+                    <img class="parceiro-image1" src="/imagens/Parceiros/EduardoMarin.png" alt="" srcset="">
+                    <img class="parceiro-image1" src="/imagens/Parceiros/EduardoMarin.png" alt="" srcset="">
+                    <img class="parceiro-image1" src="/imagens/Parceiros/EduardoMarin.png" alt="" srcset="">
+                    <img class="parceiro-image1" src="/imagens/Parceiros/EduardoMarin.png" alt="" srcset="">
                 </div>
             </div>
         </div>
         <div id="contato">
-            <br><br><br><br>
+            <br><br><br><br><br>
             <div  class="contato-container">
-                <div>
-                    <h3>Entre em contato</h3>
+                <div class="contato-title">
+                    <h3><strong>Entre em contato</strong></h3>
                 </div>
-                <form action="https://api.staticforms.xyz/submit" method="post">
-                    <label for="">Nome</label><br>
-                    <input type="text" name="name" placeholder="Your Name"><br>
-                    <label for="">E-mail</label><br>
-                    <input type="text" name="email" placeholder="Your Email" /><br>
-                    <label for="">Solicitação</label><br>
-                    <textarea name="message"></textarea><br>
-                    <input type="text" name="honeypot" style="display:none">
-                    <input type="hidden" name="accessKey" value="aaaaaaaa-bbbb-cccc-dddd-eeee6666kkkk">
-                    <input type="hidden" name="subject" value="Contact us from - example.com" />
-                    <input type="hidden" name="replyTo" value="@">
-                    <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
-                    <input type="submit" value="Submit" />
-                </form>
+                <div class="forms-body">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <label for="">Nome</label><br>
+                        <input class="insert-forms" type="text" name="name" placeholder="Insira o seu nome..."><br>
+                        <label for="">Telefone</label><br>
+                        <input class="insert-forms" type="tel" name="name" placeholder="(DDD)91234-5678"><br>
+                        <label for="">E-mail</label><br>
+                        <input class="insert-forms" type="text" name="email" placeholder="Insira o seu e-mail..." /><br>
+                        <label for="">Solicitação</label><br>
+                        <textarea class="insert-text" rows="5" cols="48" name="message" placeholder="Descreva sua solicitação..."></textarea><br>
+                        <input type="text" name="honeypot" style="display:none">
+                        <input type="hidden" name="accessKey" value="aaaaaaaa-bbbb-cccc-dddd-eeee6666kkkk">
+                        <input type="hidden" name="subject" value="Contact us from - example.com" />
+                        <input type="hidden" name="replyTo" value="@">
+                        <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+                        <input class="btn-forms" type="submit" value="Submit" />
+                    </form>
+                </div>
+                
             </div>
         </div>
         
@@ -196,18 +206,24 @@
                 <h1>Logo</h1>
             </div>
             <div>
-                <h3>contato</h3>
-                <img src="/imagens/whatsapp.png" alt="">
+                <h3><strong>Contato</strong></h3>
+                <h5>email@email.com</h5>
+                
+                <h5>(DDD)91234-5678</h5>
             </div>
-            <div>
-                <h3>Redes Sociais</h3>
-                <img src="/imagens/linkedin.png" alt="">
+            <div class="social-container">
+                <h3><strong>Redes Sociais</strong></h3>
+                <img class="social-image" src="/imagens/linkedin.png" alt="">
+                <img class="social-image" src="/imagens/linkedin.png" alt="">
+                <img class="social-image" src="/imagens/linkedin.png" alt="">
+                <img class="social-image" src="/imagens/linkedin.png" alt="">
+                <img class="social-image" src="/imagens/linkedin.png" alt="">
             </div>
 
         </div>
-        <div>
+        <div class="dev-container">
             <h6>Portfólio desenvolvido por</h6>
-            <img src="/imagens/Parceiros/EduardoMarin.png" alt="">
+            <img class="mkt-dev" src="/imagens/Parceiros/LogoEduardoMarin.png" alt="">
         </div>
     </footer>
 
