@@ -12,7 +12,7 @@
 <body>
     <header class="cabecalho">
         <div class="logtipo">
-            <h1>Logo</h1> <!--String ou imagem-->
+            <h1 style="text-shadow: 0px 0px 30px rgb(255, 255, 255), 0px 0px 30px rgb(255, 0, 0);">Logo</h1> <!--String ou imagem-->
         </div>
             <div>
                 <nav class="navi-container">
@@ -110,21 +110,22 @@
                     <ul>
                         <div class="servico">
                             <div>
-                                <li onclick="servico01()">Serviço 01</li>
-                                <div id="designServico01"></div>
+                                <p class="list-servico" id="lists1" onclick="showServico01()">Serviço 01</p>
+                                 
+                                <div id="servico01"></div>
                             </div>
                         </div>
                         <div class="servico">
-                            <li onclick="servico02()">Serviço 02</li>
-                            <div id="designServico02"></div>
+                            <p class="list-servico" id="lists2" onclick="showServico02()">Serviço 02</p>
+                            <div id="servico02"></div>
                         </div>
                         <div class="servico">
-                            <li onclick="servico03()">Serviço 03</li>
-                            <div id="designServico03"></div>
+                            <p  class="list-servico" id="lists3" onclick="showServico03()">Serviço 03</p>
+                            <div id="servico03"></div>
                         </div>
                         <div class="servico">
-                            <li onclick="servico04()">Serviço 04</li>
-                            <div id="designServico04"></div>
+                            <p  class="list-servico" id="lists4" onclick="showServico04()">Serviço 04</p>
+                            <div id="servico04"></div>
                         </div>
     
                     </ul>
@@ -143,9 +144,9 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo voluptatem reprehenderit voluptates molestiae ratione necessitatibus, exercitationem, repellat voluptas iste adipisci doloribus! Iste unde consequuntur adipisci magni quod reprehenderit laborum.</p>
                     </div>
                     <div>
-                        <img class="projeto-images" onmouseenter="marinIn()" onmouseleave="marinOut()" src="/imagens/Serviços/Marin.png" alt="">
-                    <img class="projeto-images" onmouseenter="marinIn()" onmouseleave="marinOut()" src="/imagens/Serviços/Marin.png" alt="">
-                    <img class="projeto-images" onmouseenter="marinIn()" onmouseleave="marinOut()" src="/imagens/Serviços/Marin.png" alt="">
+                        <img class="projeto-images" src="/imagens/Serviços/Marin.png" alt="">
+                        <img class="projeto-images" src="/imagens/Serviços/Marin.png" alt="">
+                        <img class="projeto-images" src="/imagens/Serviços/Marin.png" alt="">
                     </div>
                 </div>
             </div>
@@ -169,6 +170,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <div id="contato">
             <br><br><br><br><br>
             <div  class="contato-container">
@@ -177,13 +179,10 @@
                 </div>
                 <div class="forms-body">
                     <form action="https://api.staticforms.xyz/submit" method="post">
-                        <label for="">Nome</label><br>
-                        <input class="insert-forms" type="text" name="name" placeholder="Insira o seu nome..."><br>
-                        <label for="">Telefone</label><br>
-                        <input class="insert-forms" type="tel" name="name" placeholder="(DDD)91234-5678"><br>
-                        <label for="">E-mail</label><br>
-                        <input class="insert-forms" type="text" name="email" placeholder="Insira o seu e-mail..." /><br>
-                        <label for="">Solicitação</label><br>
+                        
+                        <input class="insert-forms" type="text" name="name" placeholder="Insira o seu nome..."><br><br>
+                        <input class="insert-forms" type="tel" name="Telefone" placeholder="(DDD)91234-5678"><br><br>
+                        <input class="insert-forms" type="text" name="email" placeholder="Insira o seu e-mail..." /><br><br>
                         <textarea class="insert-text" rows="5" cols="48" name="message" placeholder="Descreva sua solicitação..."></textarea><br>
                         <input type="text" name="honeypot" style="display:none">
                         <input type="hidden" name="accessKey" value="aaaaaaaa-bbbb-cccc-dddd-eeee6666kkkk">
@@ -195,9 +194,7 @@
                 </div>
                 
             </div>
-        </div>
-        
-    </div> 
+        </div> 
     </main>
 
     <footer class="rodape">

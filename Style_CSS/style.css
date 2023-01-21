@@ -49,7 +49,7 @@ button::after {
   }
 
 main {
-    padding: 100px;
+    padding: 50px;
 }
 
 .corpo {
@@ -122,7 +122,6 @@ main {
 
 .servico {
     line-height: 80px;
-    cursor: pointer;
 }
 
 .projetos-container {
@@ -150,6 +149,33 @@ main {
     
 }
 
+
+.servico  {
+    margin: 30px;
+    width: auto;
+
+}
+
+.list-servico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px; /*Parametrizavel*/
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px 30px;
+    color: rgb(103, 156, 255);
+   font-weight: bold;
+   transition: .2s;
+   cursor: pointer;
+
+}
+
+.list-servico:hover {
+    text-shadow: 0px 0px 5px blue,0px 0px 5px rgb(223, 4, 150);
+    background-color: #201818;
+
+}
+
 .parceiros-title {
     display: flex;
     align-items: center;
@@ -170,6 +196,11 @@ width: auto;
     width: 300px;
 }
 
+.contato-container {
+    padding: 20px;
+    background-color: #1b1b1b;
+}
+
 .contato-title {
     display: flex;
     align-items: center;
@@ -177,11 +208,18 @@ width: auto;
     margin-bottom: 20px;  
 }
 
+.forms-labels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .forms-body {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+
 }
 
 .insert-forms {
